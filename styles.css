@@ -1,0 +1,125 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: rgb(245, 212, 215);
+}
+
+textarea {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  display: block;
+  background-color: rgb(255, 255, 255);
+  width: 600px;
+  height: 130px;
+  margin: 20px auto;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid rgb(210, 211, 218);
+  overflow: auto;
+  outline: none;
+  color: #186077;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  resize: none;
+}
+
+.keyboard {
+  user-select: none;
+  padding: 5px;
+  border-radius: 3px;
+  margin: 0 auto;
+  width: 760px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.key {
+  transition: all 0.2s ease-in;
+  color: white;
+  cursor: pointer;
+  border-radius: 6px;
+  display: flex;
+  margin: 5px;
+  width: 40px;
+  height: 40px;
+  background-color: rgb(4, 27, 27);
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(
+    312.18deg,
+    #106580 -17.63%,
+    #1d99c0 -17.61%,
+    #3c194d 129.05%,
+    rgba(49, 19, 42, 0) 129.06%
+  );
+  box-shadow: 4px 4px 4px rgba(63, 19, 19, 0.44),
+    inset 4px 4px 4px rgba(255, 255, 255, 0.25);
+}
+
+.ShiftLeft,
+.ShiftRight {
+  width: 95px;
+}
+
+.Backspace {
+  width: 100px;
+}
+.Tab {
+  width: 100px;
+}
+.Enter {
+  width: 95px;
+  background: linear-gradient(
+    113.91deg,
+    rgba(106, 35, 35, 0.85) -10.2%,
+    #e96175 155.44%,
+    rgba(173, 123, 123, 0) 155.46%
+  );
+  box-shadow: 4px 4px 4px rgba(63, 19, 19, 0.44),
+    inset 4px 4px 4px rgba(218, 228, 233, 0.23);
+}
+.CapsLock {
+  width: 95px;
+}
+.Space {
+  width: 345px;
+}
+
+.active {
+  transition: all 0.1s ease-in;
+  background: linear-gradient(
+    312.18deg,
+    #94becb -17.63%,
+    #92bcca -17.61%,
+    #b490c5 129.05%,
+    rgba(214, 168, 204, 0) 129.06%
+  );
+  box-shadow: 2px 2px 4px rgba(19, 31, 63, 0.81),
+    inset 4px 4px 4px rgba(255, 255, 255, 0.25);
+
+  border-radius: 20px;
+}
+
+.info {
+  color: #155368;
+  padding-top: 20px;
+  text-align: center;
+}
+
+p {
+  margin: 5px;
+  padding: 0;
+}
+
+.Enter.active {
+  transition: all 0.1s ease-in;
+  background: linear-gradient(
+    113.91deg,
+    rgba(163, 91, 91, 0.85) -10.2%,
+    #dba4ac 155.44%,
+    rgba(241, 210, 210, 0) 155.46%
+  );
+  box-shadow: 4px 4px 4px rgba(63, 19, 19, 0.44),
+    inset 4px 4px 4px rgba(218, 228, 233, 0.23);
+}
